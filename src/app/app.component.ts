@@ -68,7 +68,7 @@ import { HeroService } from './hero.service';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
-  heroes = HEROES;
+  heroes: Hero[];
   hero: Hero = {
     id: 1,
     name: 'Windstorm',
