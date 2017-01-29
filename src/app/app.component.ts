@@ -77,4 +77,7 @@ export class AppComponent {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
+  getHeroes(): void {
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+  }
 }
